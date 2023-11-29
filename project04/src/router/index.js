@@ -22,6 +22,46 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "welcome" */ '../views/WelecomeView.vue')
+  },
+  {
+    path: '/dataBinding/String',
+    name: 'dataBinding',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "dataBinding", webpackPrefetch:true */ '../views/databinding_01/DataBindingStringView.vue')
+  },
+  {
+    path: '/dataBinding/html',
+    name: 'htmlBinding',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "dataBinding", webpackPrefetch:true */ '../views/databinding_01/DataBindingHtmlView.vue')
+  },
+  {
+    path: '/dataBinding/input',
+    name: 'inputBinding',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "dataBinding", webpackPrefetch:true */ '../views/databinding_01/DataBindingInputView.vue')
+  },
+  {
+    path: '/dataBinding/selcet',
+    name: 'selectBinding',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "dataBinding", webpackPrefetch:true */ '../views/databinding_01/DataBindingSelectView.vue')
+  },
+  {
+    path: '/dataBinding/attribute',
+    name: 'AttributeBinding',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "dataBinding", webpackPrefetch:true */ '../views/databinding_01/DataBindingAttributeView.vue')
   }
 ]
 
