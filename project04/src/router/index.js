@@ -62,6 +62,38 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "dataBinding", webpackPrefetch:true */ '../views/databinding_01/DataBindingAttributeView.vue')
+  },
+  {
+    path: '/event/List',
+    name: 'ListBinding',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "event", webpackPrefetch:true */ '../views/event_02/DataBindingListView.vue')
+  },
+  {
+    path: '/event/Click',
+    name: 'ClickBinding',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "event", webpackPrefetch:true */ '../views/event_02/EventClickView.vue')
+  },
+  {
+    path: '/event/Change',
+    name: 'ChangeBinding',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "event", webpackPrefetch:true */ '../views/event_02/EventChangeView.vue')
+  },
+  {
+    path: '/event/key',
+    name: 'keyBinding',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "event", webpackPrefetch:true */ '../views/event_02/EventKeyView.vue')
   }
 ]
 

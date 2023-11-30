@@ -2,7 +2,7 @@
   <div id="wrap">
     <header>
       <section id="header_top">
-        <h1><img src="" alt="logo"></h1>
+        <h1 id="logo"><img src="./images/apeach.png" alt="logo"></h1>
         <ul id="login">
           <li><a href="#">로그인</a></li>
           <li><a href="#">회원가입</a></li>
@@ -69,6 +69,34 @@
                 <li><a href="#">목록3</a></li>
               </ul>
             </li>
+            <li class="mainnav"><router-link to="/event/List">List</router-link>
+              <ul class="submenu">
+                <li><a href="#">목록1</a></li>
+                <li><a href="#">목록2</a></li>
+                <li><a href="#">목록3</a></li>
+              </ul>
+            </li>
+            <li class="mainnav"><router-link to="/event/Click">Click</router-link>
+              <ul class="submenu">
+                <li><a href="#">목록1</a></li>
+                <li><a href="#">목록2</a></li>
+                <li><a href="#">목록3</a></li>
+              </ul>
+            </li>
+            <li class="mainnav"><router-link to="/event/Change">Change</router-link>
+              <ul class="submenu">
+                <li><a href="#">목록1</a></li>
+                <li><a href="#">목록2</a></li>
+                <li><a href="#">목록3</a></li>
+              </ul>
+            </li>
+            <li class="mainnav"><router-link to="/event/key">key</router-link>
+              <ul class="submenu">
+                <li><a href="#">목록1</a></li>
+                <li><a href="#">목록2</a></li>
+                <li><a href="#">목록3</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </section>
@@ -117,18 +145,32 @@ ol,ul,li,td,tr,th{
 header{
   width: 100%;
   height: 130px;
-  background: #ddcaca;
+  background: rgb(190, 238, 190);
   font-weight: bold;
   font-size: 18px;
+}
+#logo{
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+#logo img{
+  width: 100%;
+  height: 100%;
 }
 #header_top{
   width: 100%;
   height: 40%;
 }
 #header_top ul{
+  float: right;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  float: right;
+  width: 400px;
+  padding: 10px;
+  margin: 10px 10px 0 0;
 }
 nav {
   margin-top: 40px;
