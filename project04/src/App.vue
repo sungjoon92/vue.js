@@ -97,6 +97,13 @@
                 <li><a href="#">목록3</a></li>
               </ul>
             </li>
+            <li class="mainnav"><router-link to="/memolist">memo</router-link>
+              <ul class="submenu">
+                <li><a href="#">목록1</a></li>
+                <li><a href="#">목록2</a></li>
+                <li><a href="#">목록3</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </section>
